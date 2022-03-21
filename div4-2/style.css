@@ -37,10 +37,9 @@
   transform: translateY(120%);
 }
 .rightNumber {
-  transform: translate(20%, 120%);
+  transform: translate(30%, 120%);
 }
 span {
-  padding: 0px 2px 0px 2px;
   font-weight: 700;
   font-size: 25px;
 }
