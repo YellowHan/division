@@ -34,13 +34,13 @@
   margin: 0px;
 }
 .leftNumber {
-  transform: translate(100%, 120%);
+  transform: translate(60%, 120%);
 }
 .rightNumber {
-  transform: translate(100%, 120%);
+  transform: translate(80%, 120%);
 }
 span {
-  padding: 0px 2px 0px 2px;
+  padding: 0px 5px 0px 5px;
   font-weight: 700;
   font-size: 25px;
 }
