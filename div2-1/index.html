@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>두 자리 / 한 자리 나눗셈</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="info">
+        <h4></h4>
+        <p>이름 :</p>
+      </div>
+      <div class="wrapper">
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num1"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num2"></span><span class="num3"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num4"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num5"></span><span class="num6"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num7"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num8"></span><span class="num9"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num10"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num11"></span><span class="num12"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num13"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num14"></span><span class="num15"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num16"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num17"></span><span class="num18"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num19"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num20"></span><span class="num21"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num22"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num23"></span><span class="num24"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num25"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num26"></span><span class="num27"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num28"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num29"></span><span class="num30"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num31"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num32"></span><span class="num33"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num34"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num35"></span><span class="num36"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num37"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num38"></span><span class="num39"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num40"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num41"></span><span class="num42"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num43"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num44"></span><span class="num45"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num46"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num47"></span><span class="num48"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num49"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num50"></span><span class="num51"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num52"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num53"></span><span class="num54"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num55"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num56"></span><span class="num57"></span>
+          </p>
+        </div>
+        <div class="underImg">
+          <p class="leftNumber">
+            <span class="num58"></span>
+          </p>
+          <p class="rightNumber">
+            <span class="num59"></span><span class="num60"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const now = new Date();
+      const dayOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
+      const today = `${now.getFullYear()}년 ${
+        now.getMonth() + 1
+      }월 ${now.getDate()}일 ${dayOfWeek[now.getDay()]}요일 `;
+      document.querySelector("h4").innerText = today;
+      for (let i = 1; i <= 60; i++) {
+        const random = Math.floor(Math.random() * 9) + 1;
+        document.querySelector(`.num${i}`).innerText = random;
+      }
+    </script>
+  </body>
+</html>
