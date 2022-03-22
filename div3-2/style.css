@@ -1,0 +1,45 @@
+.container {
+  width: 830px;
+  height: 1100px;
+  margin: auto;
+}
+#info {
+  padding: 0px 50px 0px 50px;
+  margin-bottom: 50px;
+  border: 1px solid gray;
+}
+#info h4 {
+  width: 80%;
+  display: inline-block;
+}
+#info p {
+  display: inline;
+  text-align: right;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 190px);
+  grid-gap: 25px 10px;
+  margin: 0px 0px 0px 20px;
+}
+.underImg {
+  width: 80%;
+  height: 180px;
+  background: url(./img/divTool.png) no-repeat;
+  background-size: contain;
+}
+.leftNumber,
+.rightNumber {
+  display: inline-block;
+  margin: 0px;
+}
+.leftNumber {
+  transform: translateY(120%);
+}
+.rightNumber {
+  transform: translate(40%, 120%);
+}
+span {
+  font-weight: 700;
+  font-size: 25px;
+}
